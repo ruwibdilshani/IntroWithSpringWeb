@@ -18,16 +18,23 @@ public class DemoController {
 
     //@GetMapping(value = "/health/**")//ona taramak path danna plwn
 
-//    @GetMapping(value = "/pattern/{name}")
-//    public String pathVariable(@PathVariable ("name")String name){
-//        return "DemoController run perfectly with :"+name;
-//
-//}
+    @GetMapping(value = "/pattern/{name}")
+    public String pathVariable(@PathVariable ("name")String name){
+      return "DemoController run perfectly with :"+name;
+
+}
 
     @GetMapping(value = "/health/{id:C\\d{3}}") //regex
     public String healthCheck(@PathVariable ("id")String id){
         return "DemoController run perfectly with :"+id;
     }
+
+    @GetMapping(params = "test=all") //regex
+    public String params(){
+        return "All tested";
+    }
+
+
 
 
     @GetMapping
