@@ -1,12 +1,9 @@
 package lk.ijse.introwithspringweb.config;
 
-import jakarta.servlet.ServletContext;
-import jakarta.servlet.ServletException;
-import org.springframework.web.WebApplicationInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-public class webAppConfig implements WebApplicationInitializer {
-    @Override
-    public void onStartup(ServletContext servletContext) throws ServletException {
-
-    }
+@Configuration
+@ComponentScan(basePackages = "lk.ijse.introwithspringweb")
+public class webAppConfig {
 }

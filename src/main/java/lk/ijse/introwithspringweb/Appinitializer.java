@@ -1,9 +1,6 @@
 package lk.ijse.introwithspringweb;
 
-import jakarta.servlet.ServletContext;
-import jakarta.servlet.ServletException;
 import lk.ijse.introwithspringweb.config.webAppConfig;
-import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import org.springframework.web.util.WebAppRootListener;
 
